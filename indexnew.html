@@ -95,31 +95,21 @@
         });
 
   var disneyland = {lat: 33.8154078, lng: -117.9236525};
+  var spectrum = {lat: 33.6508815, lng: -117.74411179999998};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
-    center: {lat: 33.8154078, lng: -117.9236525}
+    center: {lat: 32.715738, lng: -117.16108380000003}
   });
 
-  var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Disneyland</h1>'+
-      '<div id="bodyContent">'+
-      '1313 Disneyland Dr, Anaheim, CA 92802 ' +
-      '</div>'+
-      '</div>';
-
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-  var marker = new google.maps.Marker({
+  var marker1 = new google.maps.Marker({
     position: disneyland,
     map: map,
     title: 'Disneyland'
   });
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
+  var marker2 = new google.maps.Marker({
+    position: spectrum,
+    map: map,
+    title: 'Irvine Spectrum'
   });
 
 
@@ -165,9 +155,14 @@
             <img src="images/pina.png" alt="" style="width:42px;height:42px;border:0;">
             </a> <b>University of California, San Diego</b> <br> 9500 Gilman Dr, La Jolla, CA 92093
 
+            <a href="irvine.html">
+            <img src="images/pinb.png" alt="" style="width:42px;height:42px;border:0;">
+            </a> <b>Irvine Spectrum Center</b> <br> 670 Spectrum Center Dr, Irvine, CA 92618
+
             <a href="disney.html">
             <img src="images/pinb.png" alt="" style="width:42px;height:42px;border:0;">
             </a> <b>Disneyland</b> <br> 1313 Disneyland Dr, Anaheim, CA 92802
+
 
             <a href="la.html">
             <img src="images/pinc.png" alt="" style="width:42px;height:42px;border:0;">

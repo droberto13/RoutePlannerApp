@@ -110,6 +110,7 @@ h2 {
 .menu-bottom {
   width: 98%;
   top: 100%;
+  
 }
 .menu-bottom.bottom-open {
   top: 0;
